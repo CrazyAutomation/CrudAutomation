@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+    <!--parallel="tests"-->
+    <!-- <listeners>
+         <listener class-name="com.vmd.test.listeners.ReportListener"/>
+         <listener class-name="com.vmd.test.listeners.TestNgListener"/>
+     </listeners>-->
+
+     <test name="Test - 1" parallel="methods">
+         <classes>
+             <class name="com.crud.test.runner.TestRunner">
+                 <methods>
+                     <include name="runTest"/>
+                 </methods>
+             </class>
+         </classes>
+     </test>
+
+     <!--<test name="Test - 2" parallel="methods">-->
+         <!--<classes>-->
+             <!--<class name="com.vmd.test.runner.TestRunner">-->
+                 <!--<methods>-->
+                     <!--<include name="SmokeTest"/>-->
+                 <!--</methods>-->
+             <!--</class>-->
+         <!--</classes>-->
+     <!--</test>-->
+
+    <!--<test name="Test - 3" parallel="methods">-->
+        <!--<classes>-->
+            <!--<class name="com.vmd.test.runner.TestRunner">-->
+                <!--<methods>-->
+                    <!--<include name="SanityTest"/>-->
+                <!--</methods>-->
+            <!--</class>-->
+        <!--</classes>-->
+    <!--</test>-->
+
+</suite>
